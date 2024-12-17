@@ -1,8 +1,10 @@
 class Animal        //parent class
 {
-    void sound()
+   
+    
+    void sleep()
     {
-        System.out.println("Anime class ");
+        System.out.println("All animals sleep");
     }
 }
 
@@ -16,7 +18,7 @@ class Dog extends Animal    //child class
 
 class Cat extends Animal  //child class
 {
-    void sound()
+    void sound()  //over riding sound method
     {
         System.out.println("Cats says meow");
     }
@@ -26,28 +28,16 @@ public class inheritance
 {
     public static void main(String[] args)
     {
-        Animal animal;
-        animal=new Dog();
-        animal.sound();
-
-        System.out.println();
-
-        animal=new Cat();
-        animal.sound();
-
-        System.out.println();
-
-        Dog dog=new Dog();
-        dog.sound();
-
-        System.out.println();
-
-        Cat cat=new Cat();
-        cat.sound();
-
-        System.out.println();
-
-        Dog d1=new Animal();
-        d1.sound();
+       Dog d1=new Dog();
+       d1.sleep();
+       d1.sound();
+       System.out.println();
+       Cat c1=new Cat();
+       c1.sleep();
+       c1.sound();
     }
 }
+
+
+
+     
